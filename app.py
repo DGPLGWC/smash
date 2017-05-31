@@ -12,7 +12,7 @@ def index():
 def question(question_id):
 
     return render_template(
-        'questions/'+str(question_id)+'.html')
+         'questions/%s.html' % str(question_id))
 
 @app.route('/error')
 def error():
@@ -24,7 +24,7 @@ def success():
     return render_template(
         'success.html')
 
-@app.route('/about/<int:score>')
+@app.route('/about')
 def about():
     return render_template(
         'about.html')
@@ -35,7 +35,7 @@ def questions( answer, question_id ):
         score = 0
         if question_id == 1:
             question_id += 1
-            if answer == "19th":
+            if answer == "15th":
                 score += 1
                 return render_template(
                     'success.html',
@@ -48,7 +48,7 @@ def questions( answer, question_id ):
                     next=question_id)
         elif question_id == 2:
             question_id += 1
-            if answer == "YOUR ANSWER HERE":
+            if answer == "19th":
                 score += 1
                 return render_template(
                     'success.html',
@@ -57,10 +57,49 @@ def questions( answer, question_id ):
             else:
                 return render_template(
                     'error.html',
-                    correctAnswer="YOUR CORRECT ANSWERE HERE",
+                    correctAnswer="19th Amendment",
+                    next=question_id)
+        elif question_id == 3:
+            question_id += 1
+            if answer == "EGYPT":
+                score += 1
+                return render_template(
+                    'success.html',
+                    next=question_id,
+                    score=score)
+            else:
+                return render_template(
+                    'error.html',
+                    correctAnswer="EGYPT",
+                    next=question_id)
+        elif question_id == 4:
+            question_id += 1
+            if answer == "Teacher":
+                score += 1
+                return render_template(
+                    'success.html',
+                    next=question_id,
+                    score=score)
+            else:
+                return render_template(
+                    'error.html',
+                    correctAnswer="Teacher",
                     next=question_id)
         elif question_id == 5:
-            if answer == "YOUR ANSWER HERE":
+            question_id += 1
+            if answer == "ht":
+                score += 1
+                return render_template(
+                    'success.html',
+                    next=question_id,
+                    score=score)
+            else:
+                return render_template(
+                    'error.html',
+                    correctAnswer="Harriet Tubman",
+                    next=question_id)
+        elif question_id == 6:
+            if answer == "np":
                 score += 1
                 return render_template(
                     'success.html',
@@ -69,11 +108,9 @@ def questions( answer, question_id ):
             else:
                 return render_template(
                     'error.html',
-                    correctAnswer="YOUR CORRECT ANSWERE HERE",
+                    correctAnswer="Nancy Pelosi",
                     finished=True)
-
-        #TODO
-        # Add 3more for each question id and fix your template accordingly
+                    
     except ValueError:
         print 'Oops thats an error should be caught'
 

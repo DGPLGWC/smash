@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Smash the Patriachy">
-    <meta http-equiv="refresh" content="5;url={{ url_for('question', question_id=next ) }}"/>
+    {% if not finished %}
+      <meta http-equiv="refresh" content="3;url={{ url_for('question', question_id=next)}}"/>
+    {% else %}
+      <meta http-equiv="refresh" content="3;url={{ url_for('about')}}"/>
+    {% endif %}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <link href="../static/image/favicon.ico" rel="icon" type="image/x-icon" />
@@ -18,14 +22,11 @@
     
     <div class="flex-success-container"  style="background-color: rgb(244, 66, 80)">
         <div class="flex-item">
-            <p>Zero Points</p>
-        </div>
-        <div class="flex-item">
-            <p>Correct Answer: YOUR ANSWER HERE</p>
+            <p>Correct Answer: {{ correctAnswer }}</p>
         </div>
         <div class="flex-item">
             <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
-                <iframe src="https://giphy.com/embed/3og0IPFkEYEAuYjptK" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/horror-angry-evil-3og0IPFkEYEAuYjptK">via GIPHY</a></p>
+                <iframe src="https://giphy.com/embed/3og0IPFkEYEAuYjptK" height="245" width="360" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/horror-angry-evil-3og0IPFkEYEAuYjptK">via GIPHY</a></p>
         </div>
 
 
