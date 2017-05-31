@@ -17,7 +17,7 @@
     
     <div id="question">
         <div class="flex-item">
-            <img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwi674ORovjTAhUCj1QKHfR8CbwQjRwIBw&url=https%3A%2F%2Fwww.zazzle.com%2Fvote%2Bgifts&psig=AFQjCNEUuQ1ZBasItbggH_xNZgrzL8u7NQ&ust=1495156497187202"="245" width="360" style="padding-right:100px;">
+            <img src="https://s3.amazonaws.com/blogimages.socialagency.com/7ca599df92bb3bd8ab02c32620080ef4.jpeg" height="245" width="360" style="padding-right:100px;">
         </div>
 
         <div class="flex-item" >
@@ -27,18 +27,26 @@
     </div>
 
     <div class="flex-container">
-        <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <a href = "{{ url_for('questions', answer='equal', question_id=2) }}">Equale Rights Admedment</a>
-        </div>
-        <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
-            <a href = "{{ url_for('questions', answer='15th', question_id=2) }}">15 Admedment</a>
-        </div>
-        <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
-            <a href = "{{ url_for('questions', answer='19th', question_id=2) }}">19 Admedment</a>
-        </div>
-        <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
-            <a href = "{{ url_for('questions', answer='dinosaurs', question_id=2) }}">Dinosaurs</a>
-        </div>
+         <a href = "{{ url_for('questions', answer='equal', question_id=2) }}">
+            <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">   
+                <br>Equal rights ammendment    
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='15th', question_id=2) }}">
+            <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
+                <br>15th Admedmen
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='19th', question_id=2) }}">
+            <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
+                <br>19 Admedmen
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='dinosaurs', question_id=2) }}">
+            <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
+                <br>Dinosaurs
+            </div>
+        </a> 
     </div>
     
     <footer>

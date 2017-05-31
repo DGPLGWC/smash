@@ -17,7 +17,7 @@
     
     <div id="question">
         <div class="flex-item">
-            <img src="TODO: Put your IMAGE Path here" height="245" width="360" style="padding-right:100px;">
+            <img src="../static/image/argument-238529_640.jpg" height="245" width="360" style="padding-right:100px;">
         </div>
 
         <div class="flex-item" >
@@ -27,18 +27,26 @@
     </div>
 
     <div class="flex-container">
-        <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <a href = "{{ url_for('questions', answer='ENGLAND', question_id=3) }}">ENGLAND</a>
-        </div>
-        <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
-            <a href = "{{ url_for('questions', answer='CHINA', question_id=3) }}">CHINA</a>
-        </div>
-        <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
-            <a href = "{{ url_for('questions', answer='SOUTH AFRICA', question_id=3) }}">SOUTH AFRICA</a>
-        </div>
-        <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
-           <a href = "{{ url_for('questions', answer='EGYPT', question_id=3) }}">EGYPT</a>
-        </div>
+         <a href = "{{ url_for('questions', answer='ENGLAND', question_id=3) }}">
+            <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">   
+                <br>ENGLAND   
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='CHINA', question_id=3) }}">
+            <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
+                <br>CHINA
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='SOUTH AFRICA', question_id=3) }}">
+            <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
+                <br>SOUTH AFRICA
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='EGYPT', question_id=3) }}">
+            <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
+                <br>EGYPT
+            </div>
+        </a> 
     </div>
     
     <footer>

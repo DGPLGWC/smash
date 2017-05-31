@@ -17,7 +17,7 @@
     
     <div id="question">
         <div class="flex-item">
-            <img src="http://weaponsman.com/wp-content/uploads/2014/09/chain.jpg" height="245" width="360" style="padding-right:00px;">
+            <img src="http://weaponsman.com/wp-content/uploads/2014/09/chain.jpg" height="245" width="360" style="padding-right:100px;">
         </div>
 
         <div class="flex-item" >
@@ -27,18 +27,26 @@
     </div>
 
     <div class="flex-container">
-        <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <a href = "{{ url_for('questions', answer='fd', question_id=5) }}">Fredrick Douglas</a>
-        </div>
-        <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
-            <a href = "{{ url_for('questions', answer='al', question_id=5) }}">Abe Lincoln</a>
-        </div>
-        <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
-            <a href = "{{ url_for('questions', answer='ht', question_id=5) }}">Harriet Tubman</a>
-        </div>
-        <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
-            <a href = "{{ url_for('questions', answer='sba', question_id=5) }}">Susan B. Anthony</a>
-        </div>
+         <a href = "{{ url_for('questions', answer='fd', question_id=5) }}">
+            <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">   
+                <br>Fredrick Douglas    
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='al', question_id=5) }}">
+            <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
+                <br>Abe Lincoln
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='ht', question_id=5) }}">
+            <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
+                <br>Harriet Tubman
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='sba', question_id=5) }}">
+            <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
+                <br>Susan B. Anthony
+            </div>
+        </a> 
     </div>
     
     <footer>

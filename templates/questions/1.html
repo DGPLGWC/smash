@@ -15,7 +15,7 @@
     
     <div id="question">
         <div class="flex-item">
-            <img src="https://s3.amazonaws.com/blogimages.socialagency.com/7ca599df92bb3bd8ab02c32620080ef4.jpeg">
+            <img src="https://s3.amazonaws.com/blogimages.socialagency.com/7ca599df92bb3bd8ab02c32620080ef4.jpeg" height="245" width="360" style="padding-right:100px;">
         </div>
 
         <div class="flex-item" >
@@ -25,20 +25,29 @@
     </div>
 
     <div class="flex-container">
-        <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <a href = "{{ url_for('questions', answer='equal', question_id=1) }}">Equal rights ammendment</a>
-        </div>
-        <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
-            <a href = "{{ url_for('questions', answer='15th', question_id=1) }}">15th ammendment</a>
-        </div>
-        <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
-            <a href = "{{ url_for('questions', answer='19th', question_id=1) }}">19th ammendment </a>
-        </div>
-        <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
-            <a href = "{{ url_for('questions', answer='voting', question_id=1) }}">Voting rights act </a>
-        </div>
+         <a href = "{{ url_for('questions', answer='equal', question_id=1) }}">
+            <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">   
+                <br>Equal rights ammendment    
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='15th', question_id=1) }}">
+            <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
+                <br>15th ammendment
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='19th', question_id=1) }}">
+            <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
+                <br>19th ammendment
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='voting', question_id=1) }}">
+            <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
+                <br>Voting rights act
+            </div>
+        </a> 
+
     </div>
-    
+  
     <footer>
         <p>&copy; Smash the Patriarchy GWC 2017</p>
     </footer>
