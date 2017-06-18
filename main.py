@@ -114,4 +114,4 @@ def questions( answer, question_id ):
     except ValueError:
         print 'Oops thats an error should be caught'
 
-app.run(host=os.getenv('IP', '0.0.0.0'), port=int(os.getenv('PORT', 8080)))
+# app.run(host=os.getenv('IP', '0.0.0.0'), port=int(os.getenv('PORT', 8080)))
